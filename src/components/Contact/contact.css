@@ -1,0 +1,72 @@
+/* App.css or your preferred stylesheet */
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-left {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .contact-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact-right {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .contact-right h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-left,
+    .contact-right {
+      max-width: 100%;
+    }
+  }
+  

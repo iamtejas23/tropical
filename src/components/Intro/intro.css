@@ -1,0 +1,149 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.cir{
+    width: 541px;
+height: 541px;
+flex-shrink: 0;
+border-radius: 541px;
+background: #87CC81;
+}
+
+.bg{
+    position: absolute;
+    top:-4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    
+  
+
+flex-shrink: 0;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hello{
+    font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+}
+
+.introText{
+    color: #1F2027;
+font-family: Poppins;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 100px; /* 125% */
+}
+
+.belowText{
+    color: #1F2027;
+font-family: Poppins;
+font-size: 80px;
+font-style: normal;
+font-weight: 500;
+line-height: 100px;
+}
+
+.introPara{
+    color: #505C59;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.btn{
+    border-radius: 30px;
+background: #F27A44;
+margin: 1rem 0;
+padding: 16px 50px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+border: none;
+color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .introContent {
+        padding: 30px;
+    }
+
+    .introContent .hello {
+        font-size: 1.5em;
+    }
+
+    .introContent .introText {
+        font-size: 2em;
+    }
+
+    .introContent .belowText {
+        font-size: 1.2em;
+    }
+
+    .introContent .introPara {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Queries for even smaller screens */
+@media (max-width: 480px) {
+    .introContent {
+        padding: 20px;
+    }
+
+    .introContent .hello {
+        font-size: 1.2em;
+    }
+
+    .introContent .introText {
+        font-size: 1.5em;
+    }
+
+    .introContent .belowText {
+        font-size: 1em;
+    }
+
+    .introContent .introPara {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+}
